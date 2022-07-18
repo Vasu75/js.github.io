@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='./lib/img/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='./lib/img/pic_bulboff.gif'">Turn off the light</button>
+<hr>
+
+<p>What Can JavaScript Do?</p>
+
+<h1 id="demo">my name is </h1>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "sreenivas"'>click to know</button>
+<hr>
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+window.alert("sreenivas is here");
+
+</script>
+<p id="demo1"></p>
+
+<script>
+let a, b, c;
+a = "sri"; b = "nivas"; c = a + b;
+document.getElementById("demo1").innerHTML = c;
+
+</script>
+<p id="vasu"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "rohit",
+  lastName : "sharma",
+  
+};
+
+// Display some data from the object:
+document.getElementById("vasu").innerHTML =
+person.firstName + " " + person.lastName;
+</script>
+<p id="hi"></p>
+
+<script>
+document.getElementById("hi").innerHTML = "i am" + " "  +"sreenivas";
+</script>
+<p id="hey"></p>
+
+<script>
+let Name1 = "Sachin";
+let Name2 = 'Tendulkar';
+
+document.getElementById("hey").innerHTML =
+Name1 + "<br>" + 
+Name2; 
+</script>
+
+<button onclick="document.getElementById('abc').innerHTML=Date()">The time is?</button>
+<p id="abc"></p>
+
+</body>
+</html>
